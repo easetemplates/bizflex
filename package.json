@@ -1,0 +1,30 @@
+{
+	"name": "business-landing-page",
+	"version": "1.0.0",
+	"description": "business-landing-page",
+	"main": "index.js",
+	"scripts": {
+		"start": "vite",
+		"build": "vite build",
+		"test": "npm run build",
+		"preview": "vite preview"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/easetemplates/business-landing-page.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/easetemplates/business-landing-page/issues"
+	},
+	"homepage": "https://github.com/easetemplates/business-landing-page#readme",
+	"devDependencies": {
+		"sass": "^1.71.1",
+		"vite": "^5.1.3"
+	},
+	"dependencies": {
+		"bootstrap": "^5.3.3"
+	}
+}

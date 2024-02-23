@@ -1,3 +1,20 @@
 @import 'bootstrap/scss/functions';
-//@import './theme/variables';
+
+@import './theme/variables';
 @import 'bootstrap/scss/bootstrap';
+
+.position-md-static {
+	position: static !important;
+}
+.position-md-relative {
+	position: relative !important;
+}
+.position-md-absolute {
+	position: absolute !important;
+}
+.position-md-fixed {
+	position: fixed !important;
+}
+.position-md-sticky {
+	position: sticky !important;
+}

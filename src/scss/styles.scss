@@ -1,26 +1,5 @@
-@import 'bootstrap/scss/functions';
+@import "bootstrap/scss/functions";
 
-@import './theme/variables';
-@import 'bootstrap/scss/bootstrap';
-
-.card-hover {
-	transition: 0.1s ease-in-out;
-	cursor: pointer;
-
-	&:hover {
-		border-color: $primary;
-		background-color: var(--#{$prefix}primary);
-		.card-title {
-			color: $white;
-		}
-		.card-text {
-			color: $white;
-		}
-		.card-link {
-			color: $white;
-		}
-		img:hover {
-			filter: brightness(0) invert(1);
-		}
-	}
-}
+@import "./theme/variables";
+@import "./theme/card";
+@import "bootstrap/scss/bootstrap";

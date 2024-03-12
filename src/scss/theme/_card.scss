@@ -1,47 +1,52 @@
 // card hover
 
 .card-hover {
-  transition: 0.1s ease-in-out;
-  cursor: pointer;
-
-  &:hover {
-    border-color: $primary;
-    background-color: var(--#{$prefix}primary);
-    .card-title {
-      color: $white;
-    }
-    .card-text {
-      color: $white;
-    }
-    .card-link {
-      color: $white;
-    }
-    img {
-      filter: brightness(0) invert(1);
-    }
-  }
+	transition: 0.1s ease-in-out;
+	cursor: pointer;
+	& svg {
+		fill: $primary;
+	}
+	&:hover {
+		border-color: $primary;
+		background-color: var(--#{$prefix}primary);
+		.card-title {
+			color: $white;
+		}
+		.card-text {
+			color: $white;
+		}
+		.card-link {
+			color: $white;
+		}
+		img {
+			filter: brightness(0) invert(1);
+		}
+		& svg {
+			fill: $white;
+		}
+	}
 }
 
 // card arrow
 .card-with-arrow {
-  max-height: 300px;
-  transition: max-height 0.15s ease-out;
-  overflow: hidden;
-  cursor: pointer;
+	max-height: 300px;
+	transition: max-height 0.15s ease-out;
+	overflow: hidden;
+	cursor: pointer;
 
-  .arrow-link {
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-  }
-  &:hover {
-    background-color: $light;
-    max-height: 350px;
-    transition: max-height 0.25s ease-in;
-  }
-  &:hover .arrow-link {
-    opacity: 1;
-    visibility: visible;
-    display: block;
-  }
+	.arrow-link {
+		opacity: 0;
+		visibility: hidden;
+		display: none;
+	}
+	&:hover {
+		background-color: $light;
+		max-height: 350px;
+		transition: max-height 0.25s ease-in;
+	}
+	&:hover .arrow-link {
+		opacity: 1;
+		visibility: visible;
+		display: block;
+	}
 }

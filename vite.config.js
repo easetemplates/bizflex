@@ -17,7 +17,8 @@ function generateEntryPoints(dir) {
 const allEntryPoints = generateEntryPoints('./src');
 
 export default {
-	root: './src',
+	base: './',
+	root: resolve(__dirname, './src'),
 	server: {
 		host: true,
 		port: 3000,
@@ -33,8 +34,8 @@ export default {
 		rollupOptions: {
 			input: allEntryPoints,
 			output: {
-				chunkFileNames: 'assets/js/theme.min.js',
-				entryFileNames: 'assets/js/theme.min.js',
+				chunkFileNames: 'assets/js/[name].min.js',
+				entryFileNames: 'assets/js/[name].min.js',
 				assetFileNames: ({ name }) => {
 					if (/\.(gif|jpe?g|png|svg)$/.test(name ?? '')) {
 						return 'assets/images/[name][extname]';

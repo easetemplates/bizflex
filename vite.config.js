@@ -29,6 +29,7 @@ export default {
 	},
 	plugins: [],
 	build: {
+		assetsInlineLimit: 0, // 1MB
 		outDir: resolve(__dirname, 'dist'),
 		emptyOutDir: true,
 		rollupOptions: {

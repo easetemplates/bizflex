@@ -29,7 +29,7 @@ export default {
 	},
 	plugins: [],
 	build: {
-		assetsInlineLimit: 0, // 1MB
+		assetsInlineLimit: 0,
 		outDir: resolve(__dirname, 'dist'),
 		emptyOutDir: true,
 		rollupOptions: {

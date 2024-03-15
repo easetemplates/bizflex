@@ -1,6 +1,6 @@
 # [Bizflex](https://preview.easetemplate.com/bizflex/)
 
-![Bizflex](https://github.com/easetemplates/bizflex/blob/main/src/assets/images/bizflex-business-template.jpg?raw=true)
+![Bizflex](https://github.com/easetemplates/bizflex/blob/main/src/images/bizflex-business-template.jpg)
 
 Content write down here. Built with Bootstrap and vite.js. Bizflex is a free and open source for your any purpose of use. Curated By [Easetemplate](https://easetemplate.com/)
 

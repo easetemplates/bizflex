@@ -292,6 +292,7 @@
 							Contents
 						</button>
 						<ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+							<li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#color">Color</a></li>
 							<li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#typography">Typography</a></li>
 							<li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#images">Images</a></li>
 							<li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#tables">Tables</a></li>
@@ -358,7 +359,492 @@
 		<div class="bd-cheatsheet container-fluid bg-body">
 			<section id="content">
 				<h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Contents</h2>
+				<article class="my-3" id="color">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+						<h3>Color</h3>
+						<a class="d-flex align-items-center" href="#!">Documentation</a>
+					</div>
 
+					<div>
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<div class="table-responsive">
+									<table class="table table-swatches">
+										<thead>
+											<tr>
+												<th style="width: 340px">Description</th>
+												<th style="width: 200px" class="ps-0">Swatch</th>
+												<th>Variables</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td rowspan="2">
+													<strong>Body —</strong>
+													Default foreground (color) and background, including components.
+												</td>
+												<td class="ps-0">
+													<div class="p-3 rounded-2" style="background-color: var(--bs-body-color)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-body-color</code>
+													<br />
+													<code>--bs-body-color-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2 border" style="background-color: var(--bs-body-bg)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-body-bg</code>
+													<br />
+													<code>--bs-body-bg-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td rowspan="2">
+													<strong>Secondary —</strong>
+													Use the
+													<code>color</code>
+													option for lighter text. Use the
+													<code>bg</code>
+													option for dividers and to indicate disabled component states.
+												</td>
+												<td class="ps-0">
+													<div class="p-3 rounded-2" style="background-color: var(--bs-secondary-color)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-secondary-color</code>
+													<br />
+													<code>--bs-secondary-color-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2 border" style="background-color: var(--bs-secondary-bg)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-secondary-bg</code>
+													<br />
+													<code>--bs-secondary-bg-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td rowspan="2">
+													<strong>Tertiary —</strong>
+													Use the
+													<code>color</code>
+													option for even lighter text. Use the
+													<code>bg</code>
+													option to style backgrounds for hover states, accents, and wells.
+												</td>
+												<td class="ps-0">
+													<div class="p-3 rounded-2" style="background-color: var(--bs-tertiary-color)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-tertiary-color</code>
+													<br />
+													<code>--bs-tertiary-color-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2 border" style="background-color: var(--bs-tertiary-bg)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-tertiary-bg</code>
+													<br />
+													<code>--bs-tertiary-bg-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Emphasis —</strong>
+													For higher contrast text. Not applicable for backgrounds.
+												</td>
+												<td class="ps-0">
+													<div class="p-3 rounded-2" style="background-color: var(--bs-emphasis-color)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-emphasis-color</code>
+													<br />
+													<code>--bs-emphasis-color-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<strong>Border —</strong>
+													For component borders, dividers, and rules. Use
+													<code>--bs-border-color-translucent</code>
+													to blend with backgrounds with an
+													<code>rgba()</code>
+													value.
+												</td>
+												<td class="ps-0">
+													<div class="p-3 rounded-2" style="background-color: var(--bs-border-color)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-border-color</code>
+													<br />
+													<code>--bs-border-color-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td rowspan="4">
+													<strong>Primary —</strong>
+													Main theme color, used for hyperlinks, focus styles, and component and form active states.
+												</td>
+												<td class="ps-0">
+													<div class="p-3 rounded-2 bg-primary">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-primary</code>
+													<br />
+													<code>--bs-primary-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2" style="background-color: var(--bs-primary-bg-subtle)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-primary-bg-subtle</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2" style="border: 5px var(--bs-primary-border-subtle) solid">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-primary-border-subtle</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="py-3 fw-bold h5" style="color: var(--bs-primary-text-emphasis)">Text</div>
+												</td>
+												<td>
+													<code>--bs-primary-text-emphasis</code>
+												</td>
+											</tr>
+											<tr>
+												<td rowspan="4">
+													<strong>Success —</strong>
+													Theme color used for positive or successful actions and information.
+												</td>
+												<td class="ps-0">
+													<div class="p-3 rounded-2 bg-success">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-success</code>
+													<br />
+													<code>--bs-success-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2" style="background-color: var(--bs-success-bg-subtle)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-success-bg-subtle</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2" style="border: 5px var(--bs-success-border-subtle) solid">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-success-border-subtle</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="py-3 fw-bold h5" style="color: var(--bs-success-text-emphasis)">Text</div>
+												</td>
+												<td>
+													<code>--bs-success-text-emphasis</code>
+												</td>
+											</tr>
+											<tr>
+												<td rowspan="4">
+													<strong>Danger —</strong>
+													Theme color used for errors and dangerous actions.
+												</td>
+												<td class="ps-0">
+													<div class="p-3 rounded-2 bg-danger">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-danger</code>
+													<br />
+													<code>--bs-danger-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2" style="background-color: var(--bs-danger-bg-subtle)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-danger-bg-subtle</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2" style="border: 5px var(--bs-danger-border-subtle) solid">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-danger-border-subtle</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="py-3 fw-bold h5" style="color: var(--bs-danger-text-emphasis)">Text</div>
+												</td>
+												<td>
+													<code>--bs-danger-text-emphasis</code>
+												</td>
+											</tr>
+											<tr>
+												<td rowspan="4">
+													<strong>Warning —</strong>
+													Theme color used for non-destructive warning messages.
+												</td>
+												<td class="ps-0">
+													<div class="p-3 rounded-2 bg-warning">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-warning</code>
+													<br />
+													<code>--bs-warning-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2" style="background-color: var(--bs-warning-bg-subtle)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-warning-bg-subtle</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2" style="border: 5px var(--bs-warning-border-subtle) solid">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-warning-border-subtle</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="py-3 fw-bold h5" style="color: var(--bs-warning-text-emphasis)">Text</div>
+												</td>
+												<td>
+													<code>--bs-warning-text-emphasis</code>
+												</td>
+											</tr>
+											<tr>
+												<td rowspan="4">
+													<strong>Info —</strong>
+													Theme color used for neutral and informative content.
+												</td>
+												<td class="ps-0">
+													<div class="p-3 rounded-2 bg-info">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-info</code>
+													<br />
+													<code>--bs-info-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2" style="background-color: var(--bs-info-bg-subtle)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-info-bg-subtle</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2" style="border: 5px var(--bs-info-border-subtle) solid">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-info-border-subtle</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="py-3 fw-bold h5" style="color: var(--bs-info-text-emphasis)">Text</div>
+												</td>
+												<td>
+													<code>--bs-info-text-emphasis</code>
+												</td>
+											</tr>
+											<tr>
+												<td rowspan="4">
+													<strong>Light —</strong>
+													Additional theme option for less contrasting colors.
+												</td>
+												<td class="ps-0">
+													<div class="p-3 rounded-2 bg-light">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-light</code>
+													<br />
+													<code>--bs-light-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2" style="background-color: var(--bs-light-bg-subtle)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-light-bg-subtle</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2" style="border: 5px var(--bs-light-border-subtle) solid">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-light-border-subtle</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="py-3 fw-bold h5" style="color: var(--bs-light-text-emphasis)">Text</div>
+												</td>
+												<td>
+													<code>--bs-light-text-emphasis</code>
+												</td>
+											</tr>
+											<tr>
+												<td rowspan="4">
+													<strong>Dark —</strong>
+													Additional theme option for higher contrasting colors.
+												</td>
+												<td class="ps-0">
+													<div class="p-3 rounded-2 bg-dark">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-dark</code>
+													<br />
+													<code>--bs-dark-rgb</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2" style="background-color: var(--bs-dark-bg-subtle)">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-dark-bg-subtle</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="p-3 rounded-2" style="border: 5px var(--bs-dark-border-subtle) solid">&nbsp;</div>
+												</td>
+												<td>
+													<code>--bs-dark-border-subtle</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="py-3 fw-bold h5" style="color: var(--bs-dark-text-emphasis)">Text</div>
+												</td>
+												<td>
+													<code>--bs-dark-text-emphasis</code>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<p class="h1">Heading 1</p>
+								<p class="h2">Heading 2</p>
+								<p class="h3">Heading 3</p>
+								<p class="h4">Heading 4</p>
+								<p class="h5">Heading 5</p>
+								<p class="h6">Heading 6</p>
+							</div>
+						</div>
+
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<p class="lead">This is a lead paragraph. It stands out from regular paragraphs.</p>
+							</div>
+						</div>
+
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<p>
+									You can use the mark tag to
+									<mark>highlight</mark>
+									text.
+								</p>
+								<p><del>This line of text is meant to be treated as deleted text.</del></p>
+								<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+								<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+								<p><u>This line of text will render as underlined.</u></p>
+								<p><small>This line of text is meant to be treated as fine print.</small></p>
+								<p><strong>This line rendered as bold text.</strong></p>
+								<p><em>This line rendered as italicized text.</em></p>
+							</div>
+						</div>
+
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<hr />
+							</div>
+						</div>
+
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<blockquote class="blockquote">
+									<p>A well-known quote, contained in a blockquote element.</p>
+									<footer class="blockquote-footer">
+										Someone famous in
+										<cite title="Source Title">Source Title</cite>
+									</footer>
+								</blockquote>
+							</div>
+						</div>
+
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<ul class="list-unstyled">
+									<li>This is a list.</li>
+									<li>It appears completely unstyled.</li>
+									<li>Structurally, it's still a list.</li>
+									<li>However, this style only applies to immediate child elements.</li>
+									<li>
+										Nested lists:
+										<ul>
+											<li>are unaffected by this style</li>
+											<li>will still show a bullet</li>
+											<li>and have appropriate left margin</li>
+										</ul>
+									</li>
+									<li>This may still come in handy in some situations.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<ul class="list-inline">
+									<li class="list-inline-item">This is a list item.</li>
+									<li class="list-inline-item">And another one.</li>
+									<li class="list-inline-item">But they're displayed inline.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</article>
 				<article class="my-3" id="typography">
 					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
 						<h3>Typography</h3>
